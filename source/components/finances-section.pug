@@ -1,0 +1,41 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__left-icon(src="images/finances-section-left-icon.png" loading="lazy" width="447" height="409" alt="icon")
+      img.finances-section__right-icon(src="images/finances-section-right-icon.png" loading="lazy" width="461" height="424" alt="icon")
+      h2.finances-section__title.font-w-bold.font-s-56.text-up
+        | О бизнес-модели 
+        span.color-pink «БИКМАТУР»
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-32.color-pink.text-up 1 месяц
+            .font-w-elp-regular.font-s-18.color-text понадобится на запуск
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-32.color-pink.text-up 40,3%
+            .font-w-elp-regular.font-s-18.color-text рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-32.color-pink.text-up 855 000 руб.
+            .font-w-elp-regular.font-s-18.color-text средний размер <br> ежемесячной выручки
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-32.color-pink.text-up 120-200%
+            .font-w-elp-regular.font-s-18.color-text размер наценки <br> на продукцию
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-32.color-pink.text-up 5 месяцев
+            .font-w-elp-regular.font-s-18.color-text средний срок окупаемости
+          .finances-section__card.swiper-slide
+            .font-w-bold.font-s-32.color-pink.text-up 345 000 руб.
+            .font-w-elp-regular.font-s-18.color-text средний размер <br> ежемесячной прибыли
+        .finances-pagination.swiper-progress-finances
+      .finances-section__bottom
+        .font-w-emp-regular.font-s-28
+          | Хотите получить детальные расчёты 
+          br.no-br
+          | для вашего города и под ваш бюджет?
+        .finances-section__bottom-text.font-w-elp-regular.font-s-22 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input.input.finances-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.finances-item(type="submit") Получить
+        .finances-section__agree-wrapper
+          include ../components/agree.pug

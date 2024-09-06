@@ -1,0 +1,29 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      img.main-section__icon(src="images/main-section-icon.png" loading="lazy" width="782" height="1062" alt="icon")
+      include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-58.text-up
+        | Зарабатывайте 
+        br.no-br
+        span.color-yellow от 345 000 рублей 
+        br.no-br
+        span.color-yellow в месяц 
+        | на продаже 
+        br.no-br
+        | авторских сувениров 
+        br.no-br
+        | и подарков
+      .main-section__line
+      .main-section__sub-title.font-w-etp-regular.font-s-26
+        | Получите пошаговую инструкцию по запуску 
+        br.no-br
+        span.color-yellow прибыльного магазина 
+        | в вашем городе
+      form.main-section__form(data-feedback-form)
+        input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn.main-item(type="submit") Получить
+      .main-section__agree-wrapper
+        include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="2032" height="1650" alt="image")

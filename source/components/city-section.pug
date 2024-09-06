@@ -1,0 +1,27 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      img.city-section__icon(src="images/city-section-icon.png" loading="lazy" width="712" height="1028" alt="icon")
+      h2.city-section__title.font-w-bold.font-s-58.text-up
+        span.color-yellow Откройте магазин 
+        br.no-br
+        | авторских сувениров 
+        br.no-br
+        | и подарков
+      .city-section__sub-title.font-w-bold.font-s-35.text-up
+        | и получайте 
+        span.color-yellow от 345 000 рублей 
+        br.no-br
+        | чистой прибыли ежемесячно
+      .main-section__line
+      .city-section__text.font-w-etp-regular.font-s-26
+        | Проверьте, свободен ли ваш город для работы 
+        br.no-br
+        span.color-yellow.font-w-bold по франшизе «БИКМАТУР»
+      form.main-section__form(data-feedback-form)
+        input.input.main-item(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn.main-item(type="submit") Проверить
+      .main-section__agree-wrapper
+        include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="2180" height="1498" alt="image")

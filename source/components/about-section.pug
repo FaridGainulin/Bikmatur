@@ -1,0 +1,54 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      img.about-section__icon(src="images/about-section-icon.png" loading="lazy" width="445" height="478" alt="icon")
+      h2.about-section__title.font-w-bold.font-s-56.text-up
+        | 24 года на рынке 
+        br.no-br
+        | продаж 
+        span.color-green сувенирной 
+        br.no-br
+        span.color-green продукции
+      .about-section__main.color-text
+        .font-w-etp-regular.font-s-16
+          | Наша история началась 
+          span.color-pink в 2000 году в Казани, 
+          | когда мы открыли 
+          br.no-br
+          | производство авторских сувениров и подарков ручной работы 
+          br.no-br
+          | с национальным колоритом. Этот вид продукции в настоящее время 
+          br.no-br
+          | очень востребован, благодаря росту внутреннего туризма. Все больше 
+          br.no-br
+          | людей хотят привезти на память из поездки что‑то необычное 
+          br.no-br
+          | и уникальное, подарить это своим друзьям, коллегам и близким.
+          br
+          br
+          | Наличие собственной дизайн-студии позволяет производить сувениры 
+          br.no-br
+          | под заказ и сотрудничать с крупными компаниями и государственными 
+          br.no-br
+          | организациями. За 24 года работы мы смогли создать устойчивую 
+          br.no-br
+          | бизнес-модель, которой с удовольствием поделимся с нашими новыми 
+          br.no-br
+          | партнёрами.
+          br
+          br
+          span.font-w-bold.font-s-16.color-pink
+            | Уже на старте сотрудничества вы получаете готовую инструкцию, 
+            br.no-br
+            | которая позволит вам открыть свой первый магазин всего 
+            br.no-br
+            | за 1 месяц и быстро окупить инвестиции.
+      .about-section__bottom-text.font-w-emp-regular.font-s-28 Ждем ваши вопросы по франшизе!
+      form.about-section__form(data-feedback-form)
+        textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+        input.input.about-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input.about-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn.about-item(type="submit") задать вопрос
+      .main-section__agree-wrapper
+        include ../components/agree.pug
+      img.about-section__img(src="images/about-section-img.png" loading="lazy" width="1311" height="2002" alt="image")
